@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Verify Adding or removing elements
-    Open Browser    https://the-internet.herokuapp.com/    chrome
+    Open Browser    https://the-internet.herokuapp.com/    chrome    headlesschrome
     Wait Until Element Is Visible    locator=xpath://a[text()='Add/Remove Elements']
     Click Element    locator=//a[text()='Add/Remove Elements']
     # Wait Until Location Is    expected=add_remove_elements -- error
